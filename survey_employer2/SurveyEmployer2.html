@@ -1,0 +1,38 @@
+{{ block title }}
+    Some last questions
+{{ endblock }}
+{{ block content }}
+
+<p>
+    {{ formfield 'age' }}
+    {{ formfield 'gender' }}
+    {{ formfield 'race' }}
+</p>
+<p>
+    {{ formfield 'education' }}
+    {{ formfield 'gpa_highschool' }}
+    {{ formfield 'gpa_college' }}
+</p>
+<p>
+    {{ formfield 'political_affiliation' }}
+</p>
+<hr>
+<br>
+<b> Final questions </b>
+
+    {{ formfield 'discrimination' }}
+    {{ formfield 'purpose' }}
+
+{{ next_button }}
+
+{{ formfield_errors 'age' }}
+{{ formfield_errors 'gender' }}
+{{ formfield_errors 'race' }}
+{{ formfield_errors 'education' }}
+{{ formfield_errors 'gpa_highschool' }}
+{{ formfield_errors 'gpa_college' }}
+{{ formfield_errors 'political_affiliation' }}
+{{ formfield_errors 'discrimination' }}
+{{ formfield_errors 'purpose' }}
+
+{{ endblock }}
